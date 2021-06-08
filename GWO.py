@@ -17,8 +17,8 @@ def vec(dim):
 
 class FitnessModel:
     '''
-        model_name    : Target Model Name (unimodal, multimodal, fix_dim_multimodal)
-        _range        : Range of fitness function
+        fitness_function    : Target Model (unimodal, multimodal, fix_dim_multimodal or composite)
+        _range        	    : Range of fitness function
     '''
     def __init__(self, fitness_function, _range):
         self.eval = fitness_function
